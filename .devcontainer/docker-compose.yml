@@ -1,0 +1,11 @@
+# .devcontainer/docker-compose.yml
+
+name: dev-container-nodejs
+services:
+  dev-container:
+    container_name: dev-container-nodejs
+    image: dev-container-nodejs:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
