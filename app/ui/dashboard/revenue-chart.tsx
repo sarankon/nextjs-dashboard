@@ -11,7 +11,7 @@ import { Revenue } from '@/app/lib/definitions';
 
 export default async function RevenueChart({ revenue }: { revenue: Revenue[] }) {
 
-  console.log('Revenue data received in RevenueChart:', revenue);
+  // console.log('Revenue data received in RevenueChart:', revenue);
 
   const chartHeight = 350;
 
