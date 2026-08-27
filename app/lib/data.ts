@@ -17,9 +17,15 @@ export async function fetchRevenue() {
     // Don't do this in production :)
 
     // console.log('Fetching revenue data...');
-    // await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 3000));
 
     const data = await sql<Revenue[]>`SELECT * FROM revenue`;
+    // console.log('Fetched revenue data:', data);
+
+    // console.log(Array.isArray(data) ? 'Data is an array.' : 'Data is not an array.');
+    // data.map((month) => {
+    //   console.log(`Month: ${month.month}, Revenue: ${month.revenue}`);
+    // });
 
     // console.log('Data fetch completed after 3 seconds.');
 
